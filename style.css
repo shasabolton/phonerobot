@@ -1,0 +1,87 @@
+.title{
+  font-size: 30px;
+  font-family: "Lucida Console", "Courier New", monospace; 
+  padding: 10px;
+}
+
+
+#infoDiv{
+  font-size: 40px;
+}
+
+
+
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.module{
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.moduleTitle{
+  background-color: black;
+  color:white;
+  display: block;
+  width:100%;
+}
+
+
+
+
+
+
+
+
+
+.joystickContainer{
+      border:1px solid black;
+      display:inline-block;
+      position:relative;
+    }
+
+    .joystick{
+      border:1px solid black;
+      width:200px;
+      aspect-ratio:1;
+      display:block;
+      position:relative;
+    }
+   
+    .marker{
+      position:absolute;
+      width:10%;
+      aspect-ratio:1;
+      background:red;
+    }
+   
+    .xHair{
+    position:absolute;
+    width:1px;
+    height:100%;
+    background:red;
+    }
+   
+    .yHair{
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:red;
+    }
+   
+    .joystickTxt{
+      display:block;
+      border:1px solid black;
+    }

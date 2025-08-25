@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Hello World!</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+     <script src="/AudioServoControler.js" defer></script>
+     <script src="/PID.js" defer></script>
+     <script src="/sensors.js" defer></script>
+     <script src="/decisionMakers.js" defer></script>
+     <script src="/computerVision.js" defer></script>
+     <script src="/Robot.js" defer></script>
+     <script src="/joystick.js" defer></script>
+     <script src="/audioRecorder.js" defer></script>
+    
+     <script src="/makeDrivingRobot.js" defer></script>
+     <script src="/makeVentriliquistRobot.js" defer></script>
+     <script src="/armsRobot.js" defer></script>
+     <script src="/helperFunctions.js" defer></script>
+     <script src="/script.js" defer></script>
+    
+    
+    
+    <!-- tensor flow neded for tracking -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    
+    <!-- face tracking -->   
+		<!--<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script> --> 
+
+    <!-- object tracking - Load the coco-ssd model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+    
+    <!-- hand tracking -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>--> 
+    
+    <!-- body tracking -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+    
+    
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <div class="content" role="main">
+        <div id = "infoDiv">          
+        </div>
+        <select id = "robotSelect" onchange = "App.selectRobot()" value = "select robot">
+          <option disabled selected value> -- select a robot -- </option>
+          <option value = "makeArmsRobot"> Arms Robot</option>
+          <option value = "makeVentriliquistRobot"> ventriliquist Robot</option>
+        </select>
+      </div>
+    </div>
+
+  </body>
+</html>
